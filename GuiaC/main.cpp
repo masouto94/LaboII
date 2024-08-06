@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <iostream>
-#include "compararDosNums.h"
-#include "verificarParidad.h"
-#include "esBisiesto.h"
-#include "categorizacion.h"
-#include "tipoTriangulo.h"
+#include <stdlib.h>
+#include "index.h"
+
 int main(){
-    calcularTipoTriangulo();
+    ordenarNumeros();
     return 0;
 }

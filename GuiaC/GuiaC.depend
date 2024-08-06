@@ -1,12 +1,9 @@
 # depslib dependency file v1.0
-1722959355 source:/home/matias/Documents/misRepos/LaboII/GuiaC/main.cpp
+1722972681 source:/home/matias/Documents/misRepos/LaboII/GuiaC/main.cpp
 	<stdio.h>
 	<iostream>
-	"compararDosNums.h"
-	"verificarParidad.h"
-	"esBisiesto.h"
-	"categorizacion.h"
-	"tipoTriangulo.h"
+	<stdlib.h>
+	"index.h"
 
 1722956620 /home/matias/Documents/misRepos/LaboII/GuiaC/compararDosNums.h
 
@@ -17,4 +14,38 @@
 1722958719 /home/matias/Documents/misRepos/LaboII/GuiaC/categorizacion.h
 
 1722959404 /home/matias/Documents/misRepos/LaboII/GuiaC/tipoTriangulo.h
+
+1722963145 /home/matias/Documents/misRepos/LaboII/GuiaC/cuentaRegresiva.h
+	<unistd.h>
+
+1722963855 /home/matias/Documents/misRepos/LaboII/GuiaC/cuentaAhorro.h
+
+1722965007 /home/matias/Documents/misRepos/LaboII/GuiaC/calcularGastos.h
+
+1722965394 /home/matias/Documents/misRepos/LaboII/GuiaC/tablasMultiplicar.h
+
+1722971071 /home/matias/Documents/misRepos/LaboII/GuiaC/calculadoraIMC.h
+	<cmath>
+
+1722971434 /home/matias/Documents/misRepos/LaboII/GuiaC/conversorTemperatura.h
+
+1722972526 /home/matias/Documents/misRepos/LaboII/GuiaC/index.h
+	"compararDosNums.h"
+	"verificarParidad.h"
+	"esBisiesto.h"
+	"categorizacion.h"
+	"tipoTriangulo.h"
+	"cuentaRegresiva.h"
+	"cuentaAhorro.h"
+	"calcularGastos.h"
+	"tablasMultiplicar.h"
+	"calculadoraIMC.h"
+	"conversorTemperatura.h"
+	"numeroAleatorio.h"
+	"ordenarNumeros.h"
+
+1722972078 /home/matias/Documents/misRepos/LaboII/GuiaC/numeroAleatorio.h
+	<time.h>
+
+1722974468 /home/matias/Documents/misRepos/LaboII/GuiaC/ordenarNumeros.h
 
