@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1722959355 source:/home/matias/Documents/misRepos/LaboII/GuiaC/main.cpp
+	<stdio.h>
+	<iostream>
+	"compararDosNums.h"
+	"verificarParidad.h"
+	"esBisiesto.h"
+	"categorizacion.h"
+	"tipoTriangulo.h"
+
+1722956620 /home/matias/Documents/misRepos/LaboII/GuiaC/compararDosNums.h
+
+1722956977 /home/matias/Documents/misRepos/LaboII/GuiaC/verificarParidad.h
+
+1722957988 /home/matias/Documents/misRepos/LaboII/GuiaC/esBisiesto.h
+
+1722958719 /home/matias/Documents/misRepos/LaboII/GuiaC/categorizacion.h
+
+1722959404 /home/matias/Documents/misRepos/LaboII/GuiaC/tipoTriangulo.h
+
