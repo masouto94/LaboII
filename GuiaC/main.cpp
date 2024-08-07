@@ -4,6 +4,6 @@
 #include "index.h"
 
 int main(){
-    ordenarNumeros();
+    cajeroAutomatico();
     return 0;
 }

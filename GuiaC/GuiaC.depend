@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1722972681 source:/home/matias/Documents/misRepos/LaboII/GuiaC/main.cpp
+1723041833 source:/home/matias/Documents/misRepos/LaboII/GuiaC/main.cpp
 	<stdio.h>
 	<iostream>
 	<stdlib.h>
@@ -29,7 +29,7 @@
 
 1722971434 /home/matias/Documents/misRepos/LaboII/GuiaC/conversorTemperatura.h
 
-1722972526 /home/matias/Documents/misRepos/LaboII/GuiaC/index.h
+1723039774 /home/matias/Documents/misRepos/LaboII/GuiaC/index.h
 	"compararDosNums.h"
 	"verificarParidad.h"
 	"esBisiesto.h"
@@ -43,9 +43,18 @@
 	"conversorTemperatura.h"
 	"numeroAleatorio.h"
 	"ordenarNumeros.h"
+	"validadorEdad.h"
+	"factorial.h"
+	"cajeroAutomatico.h"
 
 1722972078 /home/matias/Documents/misRepos/LaboII/GuiaC/numeroAleatorio.h
 	<time.h>
 
-1722974468 /home/matias/Documents/misRepos/LaboII/GuiaC/ordenarNumeros.h
+1723035815 /home/matias/Documents/misRepos/LaboII/GuiaC/ordenarNumeros.h
+
+1723038702 /home/matias/Documents/misRepos/LaboII/GuiaC/validadorEdad.h
+
+1723039695 /home/matias/Documents/misRepos/LaboII/GuiaC/factorial.h
+
+1723043213 /home/matias/Documents/misRepos/LaboII/GuiaC/cajeroAutomatico.h
 

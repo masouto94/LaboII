@@ -11,3 +11,6 @@
 #include "conversorTemperatura.h"
 #include "numeroAleatorio.h"
 #include "ordenarNumeros.h"
+#include "validadorEdad.h"
+#include "factorial.h"
+#include "cajeroAutomatico.h"
