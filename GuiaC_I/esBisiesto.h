@@ -1,4 +1,4 @@
-bool checkLeapYear(int year){
+bool chequearBisiesto(int year){
     if(year % 400 == 0){
         return true;
     }
@@ -13,7 +13,7 @@ void esBisiesto(){
     int year;
     printf("Ingrese un anio:\n");
     std::cin >> year;
-    if(checkLeapYear(year)){
+    if(chequearBisiesto(year)){
         printf("El anio %d es bisiesto",year);
         return;
     }

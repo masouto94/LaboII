@@ -4,6 +4,6 @@
 #include "index.h"
 
 int main(){
-    esBisiesto();
+    printf("Hola");
     return 0;
 }

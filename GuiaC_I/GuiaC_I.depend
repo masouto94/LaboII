@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1723156419 source:/home/matias/Documents/misRepos/LaboII/GuiaC_I/main.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	"index.h"
+
+1723039774 /home/matias/Documents/misRepos/LaboII/GuiaC_I/index.h
+	"compararDosNums.h"
+	"verificarParidad.h"
+	"esBisiesto.h"
+	"categorizacion.h"
+	"tipoTriangulo.h"
+	"cuentaRegresiva.h"
+	"cuentaAhorro.h"
+	"calcularGastos.h"
+	"tablasMultiplicar.h"
+	"calculadoraIMC.h"
+	"conversorTemperatura.h"
+	"numeroAleatorio.h"
+	"ordenarNumeros.h"
+	"validadorEdad.h"
+	"factorial.h"
+	"cajeroAutomatico.h"
+
+1722956620 /home/matias/Documents/misRepos/LaboII/GuiaC_I/compararDosNums.h
+
+1722956977 /home/matias/Documents/misRepos/LaboII/GuiaC_I/verificarParidad.h
+
+1722957988 /home/matias/Documents/misRepos/LaboII/GuiaC_I/esBisiesto.h
+
+1722958719 /home/matias/Documents/misRepos/LaboII/GuiaC_I/categorizacion.h
+
+1722959404 /home/matias/Documents/misRepos/LaboII/GuiaC_I/tipoTriangulo.h
+
+1722963145 /home/matias/Documents/misRepos/LaboII/GuiaC_I/cuentaRegresiva.h
+	<unistd.h>
+
+1722963855 /home/matias/Documents/misRepos/LaboII/GuiaC_I/cuentaAhorro.h
+
+1722965007 /home/matias/Documents/misRepos/LaboII/GuiaC_I/calcularGastos.h
+
+1722965394 /home/matias/Documents/misRepos/LaboII/GuiaC_I/tablasMultiplicar.h
+
+1722971071 /home/matias/Documents/misRepos/LaboII/GuiaC_I/calculadoraIMC.h
+	<cmath>
+
+1722971434 /home/matias/Documents/misRepos/LaboII/GuiaC_I/conversorTemperatura.h
+
+1722972078 /home/matias/Documents/misRepos/LaboII/GuiaC_I/numeroAleatorio.h
+	<time.h>
+
+1723035815 /home/matias/Documents/misRepos/LaboII/GuiaC_I/ordenarNumeros.h
+
+1723038702 /home/matias/Documents/misRepos/LaboII/GuiaC_I/validadorEdad.h
+
+1723039695 /home/matias/Documents/misRepos/LaboII/GuiaC_I/factorial.h
+
+1723043213 /home/matias/Documents/misRepos/LaboII/GuiaC_I/cajeroAutomatico.h
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1723155876 source:/home/matias/Documents/misRepos/LaboII/GuiaC_II/main.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	"index.h"
+
+1723155823 /home/matias/Documents/misRepos/LaboII/GuiaC_II/index.h
+
