@@ -1,9 +1,12 @@
 # depslib dependency file v1.0
-1723155876 source:/home/matias/Documents/misRepos/LaboII/GuiaC_II/main.cpp
+1723161768 source:/home/matias/Documents/misRepos/LaboII/GuiaC_II/main.cpp
 	<stdio.h>
 	<iostream>
 	<stdlib.h>
 	"index.h"
 
-1723155823 /home/matias/Documents/misRepos/LaboII/GuiaC_II/index.h
+1723159665 /home/matias/Documents/misRepos/LaboII/GuiaC_II/index.h
+	"punteros.h"
+
+1723163302 /home/matias/Documents/misRepos/LaboII/GuiaC_II/punteros.h
 

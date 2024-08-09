@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1723156419 source:/home/matias/Documents/misRepos/LaboII/GuiaC_I/main.cpp
+1723157610 source:/home/matias/Documents/misRepos/LaboII/GuiaC_I/main.cpp
 	<stdio.h>
 	<iostream>
 	<stdlib.h>
@@ -27,7 +27,7 @@
 
 1722956977 /home/matias/Documents/misRepos/LaboII/GuiaC_I/verificarParidad.h
 
-1722957988 /home/matias/Documents/misRepos/LaboII/GuiaC_I/esBisiesto.h
+1723156790 /home/matias/Documents/misRepos/LaboII/GuiaC_I/esBisiesto.h
 
 1722958719 /home/matias/Documents/misRepos/LaboII/GuiaC_I/categorizacion.h
 

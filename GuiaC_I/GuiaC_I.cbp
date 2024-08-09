@@ -31,6 +31,24 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="cajeroAutomatico.h" />
+		<Unit filename="calculadoraIMC.h" />
+		<Unit filename="calcularGastos.h" />
+		<Unit filename="categorizacion.h" />
+		<Unit filename="compararDosNums.h" />
+		<Unit filename="conversorTemperatura.h" />
+		<Unit filename="cuentaAhorro.h" />
+		<Unit filename="cuentaRegresiva.h" />
+		<Unit filename="esBisiesto.h" />
+		<Unit filename="factorial.h" />
+		<Unit filename="index.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="numeroAleatorio.h" />
+		<Unit filename="ordenarNumeros.h" />
+		<Unit filename="tablasMultiplicar.h" />
+		<Unit filename="tipoTriangulo.h" />
+		<Unit filename="validadorEdad.h" />
+		<Unit filename="verificarParidad.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

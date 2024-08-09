@@ -4,6 +4,6 @@
 #include "index.h"
 
 int main(){
-    printf("Hola");
+    ejercicioIntegrador();
     return 0;
 }

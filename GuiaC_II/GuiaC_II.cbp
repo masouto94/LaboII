@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="index.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="punteros.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
