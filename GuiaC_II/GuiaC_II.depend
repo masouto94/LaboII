@@ -10,3 +10,20 @@
 
 1723163302 /home/matias/Documents/misRepos/LaboII/GuiaC_II/punteros.h
 
+1723416393 source:c:\users\masou\dev\laboii\guiac_ii\main.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	"index.h"
+
+1723416356 c:\users\masou\dev\laboii\guiac_ii\index.h
+	"punteros.h"
+	"intercambioValores.h"
+	"mayorEntreDos.h"
+
+1723414735 c:\users\masou\dev\laboii\guiac_ii\punteros.h
+
+1723415926 c:\users\masou\dev\laboii\guiac_ii\intercambiovalores.h
+
+1723425403 c:\users\masou\dev\laboii\guiac_ii\mayorentredos.h
+

@@ -4,6 +4,6 @@
 #include "index.h"
 
 int main(){
-    ejercicioIntegrador();
+    mayorEntreDos();
     return 0;
 }

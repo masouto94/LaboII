@@ -32,7 +32,9 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="index.h" />
+		<Unit filename="intercambioValores.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mayorEntreDos.h" />
 		<Unit filename="punteros.h" />
 		<Extensions />
 	</Project>

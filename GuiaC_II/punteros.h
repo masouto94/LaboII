@@ -37,8 +37,8 @@ void ejercicioIntegrador(){
     printf("La suma es %d\n",suma);
     printf("El producto es es %d\n",producto);
     //Para probar reusar ese puntero para otra cosa
-    char lala = 'P';
-    cantidad_p = &lala;
-    printf("Ahora cantidad_p es un char: %c", *(char*)cantidad_p);
+//    char lala = 'P';
+//    cantidad_p = &lala;
+//    printf("Ahora cantidad_p es un char: %c", *(char*)cantidad_p);
 
 }
