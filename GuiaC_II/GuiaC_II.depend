@@ -1,14 +1,20 @@
 # depslib dependency file v1.0
-1723161768 source:/home/matias/Documents/misRepos/LaboII/GuiaC_II/main.cpp
+1723485635 source:/home/matias/Documents/misRepos/LaboII/GuiaC_II/main.cpp
 	<stdio.h>
 	<iostream>
 	<stdlib.h>
 	"index.h"
 
-1723159665 /home/matias/Documents/misRepos/LaboII/GuiaC_II/index.h
+1723485621 /home/matias/Documents/misRepos/LaboII/GuiaC_II/index.h
 	"punteros.h"
+	"intercambioValores.h"
+	"mayorEntreDos.h"
+	"sumaEntreDos.h"
+	"parOImpar.h"
+	"factorial.h"
+	"sumaDigitos.h"
 
-1723163302 /home/matias/Documents/misRepos/LaboII/GuiaC_II/punteros.h
+1723482802 /home/matias/Documents/misRepos/LaboII/GuiaC_II/punteros.h
 
 1723416393 source:c:\users\masou\dev\laboii\guiac_ii\main.cpp
 	<stdio.h>
@@ -26,4 +32,16 @@
 1723415926 c:\users\masou\dev\laboii\guiac_ii\intercambiovalores.h
 
 1723425403 c:\users\masou\dev\laboii\guiac_ii\mayorentredos.h
+
+1723482802 /home/matias/Documents/misRepos/LaboII/GuiaC_II/intercambioValores.h
+
+1723484355 /home/matias/Documents/misRepos/LaboII/GuiaC_II/mayorEntreDos.h
+
+1723484134 /home/matias/Documents/misRepos/LaboII/GuiaC_II/sumaEntreDos.h
+
+1723484983 /home/matias/Documents/misRepos/LaboII/GuiaC_II/parOImpar.h
+
+1723485187 /home/matias/Documents/misRepos/LaboII/GuiaC_II/factorial.h
+
+1723486591 /home/matias/Documents/misRepos/LaboII/GuiaC_II/sumaDigitos.h
 

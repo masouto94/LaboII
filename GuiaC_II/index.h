@@ -1,3 +1,7 @@
 #include "punteros.h"
 #include "intercambioValores.h"
 #include "mayorEntreDos.h"
+#include "sumaEntreDos.h"
+#include "parOImpar.h"
+#include "factorial.h"
+#include "sumaDigitos.h"

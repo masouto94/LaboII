@@ -1,18 +1,19 @@
 void mayorEntreDos(){
-    int numA,numB;
-    int *numA_p = &numA, *numB_p = &numB;
+    int colector, maximo;
+    int * colectorP = &colector;
     printf("Ingrese el numero A:\n");
-    scanf("%d", numA_p);
+    scanf("%d", (int*)colectorP);
+    maximo = *(int*)colectorP;
     printf("Ingrese el numero B:\n");
-    scanf("%d", numB_p);
-    if(*numA_p > *numB_p ){
-        printf("%d es mayor que %d", *numA_p,*numB_p);
+    scanf("%d", (int*)colectorP);
+    if(maximo > *(int*)colectorP){
+        printf("%d es mayor que %d", maximo,*(int*)colectorP);
         return;
     }
-    if(*numA_p < *numB_p ){
-        printf("%d es mayor que %d", *numB_p,*numA_p);
+    if(maximo < *(int*)colectorP ){
+        printf("%d es mayor que %d", *(int*)colectorP, maximo);
         return;
     }
-    printf("%d es igual que %d", *numA_p,*numB_p);
+    printf("%d es igual que %d", maximo, *(int*)colectorP);
     return;
 }
