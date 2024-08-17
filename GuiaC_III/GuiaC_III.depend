@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1723930002 source:c:\users\masou\dev\laboii\guiac_iii\main.cpp
+	<stdio.h>
+	"index.h"
+
+1723929846 c:\users\masou\dev\laboii\guiac_iii\index.h
+	"sumaVector.h"
+
+1723931801 c:\users\masou\dev\laboii\guiac_iii\sumavector.h
+
