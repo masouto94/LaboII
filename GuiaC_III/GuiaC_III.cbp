@@ -33,6 +33,8 @@
 		</Compiler>
 		<Unit filename="index.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="maxVector.h" />
+		<Unit filename="sumaVector.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
