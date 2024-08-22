@@ -1,2 +1,2 @@
-#include "vectorCadena.h"
-#include "stringLength.h"
+#include "sumaVector.h"
+#include "maxVector.h"

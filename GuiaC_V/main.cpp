@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 #include "index.h"
 
 int main(){
-    maxVector();
+    stringLength();
     return 0;
 }
