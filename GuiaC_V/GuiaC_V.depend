@@ -1,14 +1,18 @@
 # depslib dependency file v1.0
-1724364995 source:c:\users\masou\dev\laboii\guiac_v\main.cpp
+1724367195 source:c:\users\masou\dev\laboii\guiac_v\main.cpp
 	<stdio.h>
+	<stdlib.h>
 	<string.h>
 	"index.h"
 
-1724364995 c:\users\masou\dev\laboii\guiac_v\index.h
+1724365848 c:\users\masou\dev\laboii\guiac_v\index.h
 	"vectorCadena.h"
 	"stringLength.h"
+	"replaceStr.h"
 
 1724364995 c:\users\masou\dev\laboii\guiac_v\vectorcadena.h
 
-1724364995 c:\users\masou\dev\laboii\guiac_v\stringlength.h
+1724366118 c:\users\masou\dev\laboii\guiac_v\stringlength.h
+
+1724367312 c:\users\masou\dev\laboii\guiac_v\replacestr.h
 
