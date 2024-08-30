@@ -1,14 +1,13 @@
 # depslib dependency file v1.0
-1724107936 source:/home/matias/Documents/misRepos/LaboII/GuiaC_IV/main.cpp
+1723933228 source:c:\users\masou\dev\laboii\guiac_iv\main.cpp
 	<stdio.h>
-	<string.h>
 	"index.h"
 
-1724108226 /home/matias/Documents/misRepos/LaboII/GuiaC_IV/index.h
-	"vectorCadena.h"
-	"stringLength.h"
+1723933238 c:\users\masou\dev\laboii\guiac_iv\index.h
+	"sumaVector.h"
+	"maxVector.h"
 
-1724107676 /home/matias/Documents/misRepos/LaboII/GuiaC_IV/vectorCadena.h
+1723931801 c:\users\masou\dev\laboii\guiac_iv\sumavector.h
 
-1724108487 /home/matias/Documents/misRepos/LaboII/GuiaC_IV/stringLength.h
+1723933220 c:\users\masou\dev\laboii\guiac_iv\maxvector.h
 

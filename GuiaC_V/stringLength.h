@@ -6,10 +6,9 @@ int getSize(char charArray[]){
     return arrSize -1;
 }
 void stringLength(){
-    int MAX_LEN = 50;
-    char cadena[MAX_LEN];
+    char cadena[STRMAXLEN];
     printf("Ingrese una cadena de texto: (Max= 50)\n");
-    fgets(cadena, MAX_LEN, stdin);
+    fgets(cadena, STRMAXLEN, stdin);
     fflush(stdin);
     printf("La cadena tiene %d elementos\n", getSize(cadena));
     printf("Con strlen es %d", strlen(cadena));

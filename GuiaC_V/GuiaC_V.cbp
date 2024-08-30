@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="GuiaC_IV" />
+		<Option title="GuiaC_V" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/GuiaC_IV" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/GuiaC_V" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -33,10 +33,9 @@
 		</Compiler>
 		<Unit filename="index.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="maxVector.h" />
-		<Unit filename="sumaVector.h" />
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
+		<Unit filename="replaceStr.h" />
+		<Unit filename="stringLength.h" />
+		<Unit filename="vectorCadena.h" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

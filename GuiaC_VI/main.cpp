@@ -2,6 +2,6 @@
 #include "index.h"
 
 int main(){
-    maxVector();
+    claseStruct();
     return 0;
 }

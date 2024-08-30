@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1724365685 source:c:\users\masou\dev\laboii\guiac_vi\main.cpp
+	<stdio.h>
+	"index.h"
+
+1724365658 c:\users\masou\dev\laboii\guiac_vi\index.h
+	"claseStruct.h"
+
+1724365677 c:\users\masou\dev\laboii\guiac_vi\clasestruct.h
+
