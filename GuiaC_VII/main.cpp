@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <iostream>
 #include <string.h>
+#include <iostream>
 #include "index.h"
 
 int main (){

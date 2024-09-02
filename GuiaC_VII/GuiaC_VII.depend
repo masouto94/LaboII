@@ -1,15 +1,20 @@
 # depslib dependency file v1.0
-1724976190 source:/home/matias/Documents/misRepos/LaboII/GuiaC_VII/main.cpp
+1725294788 source:/home/matias/Documents/misRepos/LaboII/GuiaC_VII/main.cpp
 	<stdio.h>
-	<iostream>
 	<string.h>
+	<iostream>
 	"index.h"
 
 1724976145 /home/matias/Documents/misRepos/LaboII/GuiaC_VII/index.h
 	"personasArray.h"
 
-1724976835 /home/matias/Documents/misRepos/LaboII/GuiaC_VII/persona.h
+1725295171 /home/matias/Documents/misRepos/LaboII/GuiaC_VII/persona.h
 
-1724976742 /home/matias/Documents/misRepos/LaboII/GuiaC_VII/personasArray.h
+1725300667 /home/matias/Documents/misRepos/LaboII/GuiaC_VII/personasArray.h
 	"persona.h"
+
+1725294465 source:/home/matias/Documents/misRepos/LaboII/GuiaC_VII/main.c
+	<stdio.h>
+	<string.h>
+	"index.h"
 
