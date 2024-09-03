@@ -28,9 +28,12 @@ Person createPerson(){
     int age;
     char gender;
     printf("Ingrese un nombre:\n");
-    scanf("%s",name);
-    //name[strcspn(name, "\n")] = '\0';
-    fflush(stdin);
+    // con esto anda
+//    scanf("%s",name);
+
+    //con esto no anda
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';
     printf("Ingrese la edad:\n");
     std::cin >> age;
     printf("Ingrese el genero:\n");

@@ -2,7 +2,9 @@
 
 void printPeopleArray(Person* peopleArray, int maxSize){
     for(int i=0; i < maxSize;i++){
+        printf("####################\n");
         printPerson(&peopleArray[i]);
+        printf("####################\n");
     }
 }
 float getAverage(Person* peopleArray, int maxSize){
@@ -56,26 +58,27 @@ void sortPeopleArray(Person * peopleArray, int * currentSize,int critheria){
 };
 
 void createPeople(){
-    Person ala = loadPerson("alama", 22, 'f');
-    Person nana = loadPerson("nanasa", 26, 'f');
+    Person alama = loadPerson("alama", 22, 'f');
+    Person nanasa = loadPerson("nanasa", 26, 'f');
     Person alf = loadPerson("alf", 30, 'm');
-    Person sara = loadPerson("saracustica", 19, 'f');
+    Person saracustica = loadPerson("saracustica", 19, 'f');
     int MAX_SIZE = 4;
     int currentSize = 0;
     int * currentSize_p = &currentSize;
-    Person people[MAX_SIZE] = {ala,nana,alf,sara};
-    currentSize = 4;
-//        Person people[MAX_SIZE];
-//    for(int i=0; i < MAX_SIZE; i++){
-//        people[i] = createPerson();
-//      currentSize++
-//    }
+// Cuando le paso las personas creadas en el programa, funciona.
+//    Person people[MAX_SIZE] = {alama,nanasa,alf,saracustica};
+//    currentSize = 4;
+    Person people[MAX_SIZE];
+    for(int i=0; i < MAX_SIZE; i++){
+        people[i] = createPerson();
+        currentSize++;
+    }
     //printf("%f\n",getAverage(people, MAX_SIZE));
 //    printPeopleArray(people,currentSize);
 //    printf("####################\n");
 //    printf("####################\n");
 //    deletePerson(people, 2,currentSize_p);
 //    printPeopleArray(people,currentSize);
-    sortPeopleArray(people, currentSize_p,1);
+    //sortPeopleArray(people, currentSize_p,1);
     printPeopleArray(people,currentSize);
 }
