@@ -23,21 +23,23 @@ Person loadPerson(char nombre[16], int edad, char genero){
     return newPerson;
 }
 
-Person createPerson(){
+Person createPerson() {
     char name[16];
     int age;
     char gender;
-    printf("Ingrese un nombre:\n");
-    // con esto anda
-//    scanf("%s",name);
 
-    //con esto no anda
+    printf("Ingrese un nombre:\n");
     fgets(name, sizeof(name), stdin);
     name[strcspn(name, "\n")] = '\0';
+
     printf("Ingrese la edad:\n");
-    std::cin >> age;
+    scanf("%d", &age);
+    while (getchar() != '\n'); // Limpia el buffer de entrada
+
     printf("Ingrese el genero:\n");
-    std::cin >> gender;
+    scanf("%c", &gender);
+    while (getchar() != '\n'); // Limpia el buffer de entrada
+
     Person persona = loadPerson(name, age, gender);
     return persona;
 }
