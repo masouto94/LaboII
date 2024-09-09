@@ -1,0 +1,3 @@
+/home/matias/Documents/misRepos/LaboII/GuiaCLion/cmake-build-debug/CMakeFiles/GuiaCLion.dir
+/home/matias/Documents/misRepos/LaboII/GuiaCLion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/matias/Documents/misRepos/LaboII/GuiaCLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
