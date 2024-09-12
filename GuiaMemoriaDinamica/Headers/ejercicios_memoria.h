@@ -133,3 +133,67 @@ void ejercicio_4() {
     free(matrix_T);
     
 }
+
+void ejercicio_5() {
+    /*Escribe un programa que cree un vector din´amico con un tama˜no inicial. Luego,
+    solicita al usuario un nuevo tama˜no para el vector y utiliza realloc() para
+    redimensionar el vector. Si es necesario, mueve los elementos antiguos al nuevo
+    vector. Finalmente, imprime el vector redimensionado y libera la memoria del
+    vector original*/
+    int initialSize,newSize;
+    printf("Ingrese el tamano del vector\n");
+    scanf("%d", &initialSize);
+    int * vectorA= (int *) malloc(initialSize * sizeof(int));
+    if(vectorA == NULL) {
+        exit(EXIT_FAILURE);
+    }
+    for (int i = 0; i < initialSize; i++) {
+        printf("Ingrese el valor de [%d]\n", i);
+        scanf("%d", &vectorA[i]);
+    }
+    for (int i = 0; i < initialSize; i++) {
+       printf("[%d]\n", vectorA[i]);
+    }
+    printf("Ingrese el nuevo tamano del vector\n");
+    scanf("%d", &newSize);
+    vectorA = (int *) realloc(vectorA, newSize * sizeof(int));
+    for (int i = 0; i < newSize; i++) {
+        printf("[%d]\n", vectorA[i]);
+    }
+    free(vectorA);
+}
+
+void ejercicio_6() {
+    // Escribe un programa que defina una estructura que contenga datos relevantes.
+    // Luego, utiliza malloc() para asignar memoria din´amica para una variable de
+    // esta estructura y permite al usuario ingresar datos para la estructura. Final-
+    // mente, imprime los datos ingresados y libera la memoria asignada
+
+    typedef struct Cat {
+        char name[10];
+        int age;
+    } Cat;
+
+    int size,edad;
+    char nombre[10];
+    printf("Ingrese el tamano del vector\n");
+    scanf("%d", &size);
+    while(getchar()!='\n');
+    Cat * catVector = (Cat *) malloc(size * sizeof(Cat));
+    for(int i = 0; i < size; i++) {
+        printf("Ingrese el nombre de [%d]\n", i);
+        fgets(nombre,10,stdin);
+        nombre[strcspn(nombre,"\n")] = '\0';
+        strcpy(catVector[i].name, nombre);
+        printf("Ingese la edad de [%d]", i);
+        scanf("%d", &edad);
+        while(getchar()!='\n');
+        catVector[i].age = edad;
+    }
+    for(int i = 0; i < size; i++) {
+        printf("[%s]\n", catVector[i].name);
+        printf("[%d]\n", catVector[i].age);
+
+    }
+    free(catVector);
+}
