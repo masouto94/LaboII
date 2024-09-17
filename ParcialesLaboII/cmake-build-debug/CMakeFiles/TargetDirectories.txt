@@ -1,0 +1,3 @@
+/home/matias/Documents/misRepos/LaboII/ParcialesLaboII/cmake-build-debug/CMakeFiles/ParcialesLaboII.dir
+/home/matias/Documents/misRepos/LaboII/ParcialesLaboII/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/matias/Documents/misRepos/LaboII/ParcialesLaboII/cmake-build-debug/CMakeFiles/rebuild_cache.dir
