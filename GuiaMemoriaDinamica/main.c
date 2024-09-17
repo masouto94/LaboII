@@ -3,6 +3,6 @@
 #include <string.h>
 #include "Headers/index.h"
 int main(void) {
-    ejercicio_6();
+    vector_from_file();
     return 0;
 }

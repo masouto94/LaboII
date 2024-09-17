@@ -7,4 +7,5 @@
 
 #endif //INDEX_H
 #include "ejercicios_memoria.h"
+#include "ejercicios_archivos.h"
 #include "matrices.h"

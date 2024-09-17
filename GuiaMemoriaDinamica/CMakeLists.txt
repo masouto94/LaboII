@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 11)
 add_executable(GuiaMemoriaDinamica main.c
         Headers/index.h
         Headers/ejercicios_memoria.h
-        Headers/matrices.h)
+        Headers/matrices.h
+        Headers/ejercicios_archivos.h)
