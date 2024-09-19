@@ -26,6 +26,35 @@ typedef struct Article {
 void addArticle(Article article,Article *articleList, const int index) {
     articleList[index] = article;
 }
+
+void deleteArticle(Article *articleList,  int * size, int productId) {
+    char confirm = 'n';
+    for (int i = 0; i < *size; i++) {
+        if (articleList[i].productId == productId) {
+            do {
+                printf("Desea borrar:\n");
+                printf("Product Id: %d => %s\n", articleList[i].productId,articleList[i].name);
+                scanf("%c", &confirm);
+                while (getchar() != '\n');
+            }while(confirm != 'n' && confirm != 'N' && confirm != 'y' && confirm != 'Y' );
+            if (confirm == 'n' || confirm == 'N') {
+                printf("Process aborted\n");
+                return;
+            }
+            while(i < *size) {
+                articleList[i].productId = articleList[i+1].productId;
+                strcpy(articleList[i].name, articleList[i+1].name);
+                articleList[i].price = articleList[i+1].price;
+                articleList[i].stock = articleList[i+1].stock;
+                articleList[i].quantitySold = articleList[i+1].quantitySold;
+                i++;
+            }
+            *size -= 1;
+            return;
+        }
+        printf("Product Id: %d Not Found\n", productId);
+    }
+}
 Article createArticle(int productId, char name[50], float price, int stock, int quantitySold) {
     Article newArticle;
     newArticle.productId = productId;
@@ -44,11 +73,58 @@ void sellArticle(Article *articleList, int size, const int productId, int amount
             }
             articleList[i].stock -= amount;
             articleList[i].quantitySold += amount;
+            return;
         }
     }
     printf("No such article with productId %d exists\n", productId);
-    return;
 }
+void modifyArticle(Article *articleList, int size, const int productId) {
+    char name[20];
+    float price;
+    int stock;
+    int quantitySold;
+    char modify = 'n';
+    for (int i = 0; i < size; i++) {
+        if (articleList[i].productId == productId) {
+            printf("Modifying article with productId %d\n", articleList[i].productId);
+            printf("Modify name? (y/n)\n");
+            scanf("%c", &modify);
+            while (getchar() != '\n');
+            if (modify == 'y' || modify == 'Y') {
+                printf("Enter name: \n");
+                fgets(name, sizeof(name), stdin);
+                strcpy(articleList[i].name, name);
+            }
+            printf("Modify price? (y/n)\n");
+            scanf("%c", &modify);
+            while (getchar() != '\n');
+            if (modify == 'y' || modify == 'Y') {
+                printf("Enter price: \n");
+                scanf("%f", &price);
+                articleList[i].price = price;
+            }
+            printf("Modify stock? (y/n)\n");
+            scanf("%c", &modify);
+            while (getchar() != '\n');
+            if (modify == 'y' || modify == 'Y') {
+                printf("Enter stock: \n");
+                scanf("%d", &stock);
+                articleList[i].stock = stock;
+            }
+            printf("Modify sales amount? (y/n)\n");
+            scanf("%c", &modify);
+            while (getchar() != '\n');
+            if (modify == 'y' || modify == 'Y') {
+                printf("Enter quantity sold: \n");
+                scanf("%d", &quantitySold);
+                articleList[i].quantitySold = quantitySold;
+            }
+            return;
+        }
+        printf("No such article with productId %d exists\n", productId);
+    }
+}
+
 void readArticleFromFile(Article cursor, char * filePath) {
     Article * pReader = &cursor;
     FILE * res = fopen(filePath, "rb");
@@ -64,8 +140,16 @@ void readArticleFromFile(Article cursor, char * filePath) {
     }
     fclose(res);
 }
+float calculateSales(Article * articleList, int size) {
+    float totalSales = 0;
+    for (int i = 0; i < size; i++) {
+        totalSales += articleList[i].quantitySold * articleList[i].price;
+    }
+    return totalSales;
+}
 
-int loadArticlesFromFile(Article cursor, char * filePath, Article ** articleList) {
+int loadArticlesFromFile(char * filePath, Article ** articleList) {
+    Article cursor;
     Article * pReader = &cursor;
     Article * articlesCollector;
     FILE * resources = fopen(filePath, "rb");
@@ -86,14 +170,27 @@ void printArticles(Article * articleList, int size) {
     for (int i = 0; i < size; i++) {
         printf("ProductId: %d\n", articleList[i].productId);
         printf("Name: %s\n", articleList[i].name);
+        printf("Name: %.2f\n", articleList[i].price);
         printf("Stock: %d\n", articleList[i].stock);
         printf("Quantity sold: %d\n", articleList[i].quantitySold);
     }
 }
 
-void loadArticlesLoop(){
+void saveArticlesToTxt(Article * articleList, int size, FILE * file) {
+    for (int i = 0; i < size; i++) {
+        fprintf(file,"##########\n");
+        fprintf(file,"ProductId: %d\n", articleList[i].productId);
+        fprintf(file,"Name: %s\n", articleList[i].name);
+        fprintf(file,"Name: %.2f\n", articleList[i].price);
+        fprintf(file,"Stock: %d\n", articleList[i].stock);
+        fprintf(file,"Quantity sold: %d\n", articleList[i].quantitySold);
+        fprintf(file, "##########\n");
+    }
+}
+
+void loadArticlesLoop(char * filePath){
     int size=1;
-    int articles = size;
+    int articles = 0;
     int productId;
     char name[50];
     float price;
@@ -128,19 +225,25 @@ void loadArticlesLoop(){
         scanf("%d", &productId);
     }while (productId != 0);
 
-    FILE * inventory = fopen("../resources/outputFiles/articles.dat", "wb");
+    FILE * inventory = fopen(filePath, "wb");
     fwrite(articleVector, sizeof(Article), articles, inventory);
     fclose(inventory);
-    return;
 }
 void parcial_1() {
 
-    //loadArticlesLoop();
-    Article reader;
     char * filePath = "../resources/outputFiles/articles.dat";
+    // loadArticlesLoop(filePath);
     //readArticleFromFile(reader, filePath);
     Article * articleVector = (Article *)malloc(sizeof(Article) * 1);
-    int totalArticles = loadArticlesFromFile(reader, filePath, &articleVector);
+    int totalArticles = loadArticlesFromFile(filePath, &articleVector);
+    // sellArticle(articleVector,totalArticles,1,1);
+    // sellArticle(articleVector,totalArticles,2,100);
+    // deleteArticle(articleVector, &totalArticles, 33);
     printArticles(articleVector, totalArticles);
+    float sales=calculateSales(articleVector, totalArticles);
+    printf("Sales: %f\n", sales);
+    FILE * textFile = fopen("../resources/outputFiles/articles.txt", "w+");
+    saveArticlesToTxt(articleVector, totalArticles, textFile);
     free(articleVector);
+
 }

@@ -1,0 +1,14 @@
+##########
+ProductId: 33
+Name: Se viene
+Name: 2000.00
+Stock: 1111
+Quantity sold: 0
+##########
+##########
+ProductId: 2
+Name: BOCAAAAAAAAA
+Name: 12234.00
+Stock: 1111
+Quantity sold: 0
+##########

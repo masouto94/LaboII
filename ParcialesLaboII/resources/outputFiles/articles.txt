@@ -1,0 +1,14 @@
+##########
+ProductId: 1
+Name: Lalala
+Name: 100.00
+Stock: 2
+Quantity sold: 0
+##########
+##########
+ProductId: 2
+Name: Horacio
+Name: 2000.00
+Stock: 2222
+Quantity sold: 0
+##########

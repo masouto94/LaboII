@@ -3,6 +3,6 @@
 #include <string.h>
 #include "Headers/index.h"
 int main(void) {
-    parcial_1();
+    parcial_2();
     return 0;
 }
