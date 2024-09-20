@@ -1,0 +1,3 @@
+/home/matias/Documents/misRepos/LaboII/ParcialLaboII19092024/cmake-build-debug/CMakeFiles/ParcialLaboII19092024.dir
+/home/matias/Documents/misRepos/LaboII/ParcialLaboII19092024/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/matias/Documents/misRepos/LaboII/ParcialLaboII19092024/cmake-build-debug/CMakeFiles/rebuild_cache.dir
