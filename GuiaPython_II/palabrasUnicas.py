@@ -9,4 +9,8 @@ def palabras_unicas():
     procesado = preprocesar_cadena(cadena)
     contador = Counter(procesado)
     print(f"Los 5 mas repetidos son {contador.most_common(5)}")
-palabras_unicas()
+
+def palabras_totales():
+    cadena = input("Ingrese una cadena de caracteres\n")
+    procesado = preprocesar_cadena(cadena)
+    print(f"En total son {len(procesado)} palabras")
