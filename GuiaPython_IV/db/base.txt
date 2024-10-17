@@ -1,0 +1,3 @@
+user,password,loggedIn
+matias,123,False
+carlos,memen,False
