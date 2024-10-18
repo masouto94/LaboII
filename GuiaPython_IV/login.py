@@ -18,7 +18,7 @@ def validar_existe(intento_login:Callable):
 
 def validar_credenciales(intento_login:Callable):
     def credenciales_correctas(*args):
-        user,password,_db = args
+        user,password,db = args
         if obtener_usuarios(db).get(user).get("password") == password:
             intento_login(*args)
             return 
